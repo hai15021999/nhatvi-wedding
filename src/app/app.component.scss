@@ -1,0 +1,67 @@
+.wedding-container {
+  color: #3e3e3e;
+  line-height: 1.6;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #faf9f6;
+}
+
+.banner {
+  background-image: url('../assets/images/castle.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  color: white;
+
+  .notice-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+
+    .title {
+        font-size: 32px;
+    }
+  }
+}
+
+.invitation, .dress-code, .program {
+  margin: 40px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.color-palette {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+
+  .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .color-1 { background-color: #63625e; }
+  .color-2 { background-color: #c6b9ac; }
+  .color-3 { background-color: #b9806b; }
+  .color-4 { background-color: #a25c4d; }
+  .color-5 { background-color: #d1b3a1; }
+}
+
+.program ul {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
