@@ -19,36 +19,78 @@
 
     <!-- Invitation -->
     <section class="invitation">
-        <h2>WEDDING INVITATION</h2>
-        <p>Мы давно ждали момента, когда вместе с вами сможем разделить самый важный и счастливый день в нашей жизни —
-            день
-            нашей свадьбы!</p>
+        <div class="flex items-center justify-center gap-2">
+            <span class="text-[20px]">SAVE</span>
+            <span class="text-[20px]">the</span>
+            <span class="text-[20px]">DATE</span>
+        </div>
+        <div class="w-[1px] h-[50px]"></div>
+        <div class="flex flex-col items-center justify-center">
+            <span class="text-[14px]">Trân trọng kính mời Quý Khách</span>
+            <span class="text-[14px]">Đến dự lễ thành hôn của chúng tôi tại</span>
+        </div>
+        <div class="w-1 h-[25px]"></div>
+        <div class="flex flex-col items-center justify-center">
+            <span class="text-[14px]">Nhà hàng hội nghị tiệc cưới</span>
+            <span class="text-[32px]">PLEIKU PALACE</span>
+        </div>
+        <!-- <div class="w-1 h-[15px]"></div> -->
+        <div class="flex flex-col items-center justify-center">
+            <span class="text-[14px]">Đại sảnh (tầng 2)</span>
+            <span class="text-[14px]">03 Nguyễn Tất Thành, Phường Pleiku, Gia Lai</span>
+        </div>
+        <div class="w-1 h-[25px]"></div>
+        <div class="flex flex-col items-center justify-center">
+            <span class="text-[28px]">Thứ Bảy | 17:00 | 02.08.2025</span>
+            <span class="text-[14px]">(Nhằm Ngày 09 Tháng 06 Năm Ất Tỵ)</span>
+        </div>
+        <div class="w-1 h-[45px]"></div>
+        <div class="flex items-center justify-center">
+            <span class="text-[20px]">Welcome !</span>
+        </div>
     </section>
 
     <!-- Dress Code -->
-    <section class="dress-code">
-        <h3>DRESS CODE</h3>
-        <p>Наш день особенно приятно будет смотреться в нарядах, выдержанных в палитре нашей свадьбы:</p>
-        <div class="color-palette">
+    <section class="flex flex-col items-center justify-center dress-code">
+        <span class="text-[20px] mb-4">DRESS CODE</span>
+        <span class="text-[14px]">Để thêm phần sang trọng và đồng điệu, </span>
+        <span class="text-[14px] mb-5">mình mong mọi người sẽ cùng diện trang phục theo Dress Code sau:</span>
+        <div class="color-palette bg-[rgba(0,0,0,0.05)] p-3 rounded-lg">
             <span class="color color-1"></span>
             <span class="color color-2"></span>
             <span class="color color-3"></span>
             <span class="color color-4"></span>
             <span class="color color-5"></span>
         </div>
-        <p>Для мужчин желательно будет классический костюм со светлой рубашкой.</p>
-        <p>Девушки, просим избегать белых и кипельно-белых оттенков.</p>
     </section>
 
-    <!-- Program -->
-    <section class="program">
-        <h3>WEDDING PROGRAM</h3>
-        <ul>
-            <li><strong>15:00–15:30</strong> | Сбор гостей</li>
-            <li><strong>15:30–16:00</strong> | Церемония</li>
-            <li><strong>16:00–18:00</strong> | Прогулка</li>
-            <li><strong>18:00–21:00</strong> | Ужин</li>
-            <li><strong>21:00–22:00</strong> | Party & Фейерверк</li>
-        </ul>
+    <!-- Calendar -->
+    <section class="program flex flex-col items-center justify-center gap-2">
+        <span class="text-[22px]">WEDDING CALENDAR</span>
+        <!-- Generate a calendar and circel the day 2nd -->
+        <div class="w-[300px] h-[300px]">
+            <app-calendar></app-calendar>
+        </div>
+    </section>
+
+    <section class="program flex flex-col items-center justify-center gap-2">
+        <span class="text-[22px] font-['Madelican']">best day ever</span>
+        <div class="flex flex-col items-left gap-2">
+            <div class="flex items-left gap-[8px]">
+                <span class="time">17:00</span>
+                |
+                <span class="description">Đón tiếp khách mời</span>
+            </div>
+            <div class="flex items-left gap-[8px]">
+                <span class="time">18:00</span>
+                |
+                <span class="description">Lễ cưới</span>
+            </div>
+            <div class="flex items-left gap-[8px]">
+                <span class="time">18:30</span>
+                |
+                <span class="description">Nhập tiệc</span>
+            </div>
+        </div>
     </section>
 </div>

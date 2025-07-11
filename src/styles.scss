@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+@font-face {
+	font-family: 'Madelican';
+	src: url('./assets/fonts/Madelican-2OO63.otf') format('opentype');
+}
+
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Gluten', serif;
 }

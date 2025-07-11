@@ -1,0 +1,18 @@
+
+
+<div class="calendar-wrapper">
+  <div class="hearts">♥ ♥ ♥</div>
+
+  <h2 class="month">Tháng 8</h2>
+
+  <div class="calendar-grid">
+    <div
+      *ngFor="let day of days"
+      class="day"
+      [class.heart]="day === highlightDay"
+      [ngClass]="{ '!text-[#fafafa]': day === highlightDay }"
+    >
+      <span>{{ day }}</span>
+    </div>
+  </div>
+</div>
