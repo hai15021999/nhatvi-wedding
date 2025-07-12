@@ -1,5 +1,5 @@
 .wedding-container {
-  color: #3e3e3e;
+  color: #256c3a;
   line-height: 1.6;
   max-width: 768px;
   margin: 0 auto;
@@ -8,12 +8,11 @@
 }
 
 .banner {
-  background-image: url('../assets/images/castle.jpg');
+  background-image: url('../assets/background/bg-dark-green.jpg');
   background-size: cover;
-  background-position: center;
-  height: 80vh;
+  height: 50vh;
   position: relative;
-  color: white;
+  color: #daf4db;
 
   .notice-overlay {
     position: absolute;
@@ -29,12 +28,57 @@
   }
 }
 
-.invitation, .dress-code, .program {
-  margin: 40px 0;
+.bg-banner-image {
+  background-image: url('../assets/images/background-banner.JPG');
+  background-size: cover;
+  background-position: center;
+
+  .bg-img-wedding-left {
+    width: 30%;
+    height: 80%;
+    background-image: url('../assets/images/image-wedding-left.jpg');
+    background-size: cover;
+    border-radius: 4px;
+  }
+
+  .bg-img-wedding-right {
+    width: 30%;
+    height: 80%;
+    background-image: url('../assets/images/image-wedding-right.jpg');
+    background-size: cover;
+    border-radius: 4px;
+  }
+}
+
+.bg-wedding-calendar-image {
+  background-image: url('../assets/images/bg-wedding-calendar.jpg');
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.invitation, .program {
+  // margin: 40px 0;
   padding: 20px;
   background: white;
-  border-radius: 12px;
+  background-image: url('../assets/background/bg-green-2.jpg');
+  background-size: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dress-code {
+  // margin: 40px 0;
+  padding: 20px;
+  background: white;
+  background-image: url('../assets/background/bg-dark-green.jpg');
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  .sub-dress-code {
+    background-image: url('../assets/background/bg-green-2.jpg');
+    // background: #fafafa;
+  }
 }
 
 .color-palette {

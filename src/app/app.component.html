@@ -3,28 +3,38 @@
     <!-- Banner -->
     <section class="banner">
         <div class="w-full h-full flex items-center justify-center">
-            <div class="flex flex-col gap-2 bg-[rgba(0,0,0,0.4)] p-4 rounded-lg text-center">
-                <span class="text-[34px] font-bold">WEDDING DAY</span>
+            <div class="flex flex-col justify-between h-full py-[48px]  text-center ">
+                <div></div>
+                <!-- <span class="text-[34px] font-bold">WEDDING DAY</span> -->
                 <div class="flex flex-col items-center justify-center">
                     <!-- line height just 14px -->
-                    <span class="md:text-[24px] text-[18px]">Phương Vi</span>
-                    <span class="md:text-[20px] text-[14px] leading-[12px]">&</span>
-                    <span class="md:text-[24px] text-[18px]">Trung Nguyên</span>
+                    <span class="text-[42px] font-['AlexBrush']">Phương Vi</span>
+                    <span class="text-[24px] leading-[12px] font-['AlexBrush']">and</span>
+                    <span class="text-[42px] font-['AlexBrush']">Trung Nguyên</span>
                 </div>
-                <span class="md:text-[28px] text-[20px]">02/08/2025</span>
+                <span class="md:text-[28px] text-[20px] font-['LibertinusMono']">02 ·08 ·2025</span>
             </div>
         </div>
 
     </section>
 
+    <div class="w-full h-[50vh] md:h-[60vh] flex items-center justify-evenly bg-banner-image ">
+        <img src="/assets/images/image-wedding-left.jpg" class="w-[45%] md:w-[36%]" alt="" />
+        <img src="/assets/images/image-wedding-right.jpg" class="w-[45%] md:w-[36%]" alt="" />
+        <!-- <div class="bg-img-wedding-left"></div> -->
+        <!-- <div class="bg-img-wedding-right"></div> -->
+    </div>
+
     <!-- Invitation -->
     <section class="invitation">
         <div class="flex items-center justify-center gap-2">
-            <span class="text-[20px]">SAVE</span>
-            <span class="text-[20px]">the</span>
-            <span class="text-[20px]">DATE</span>
+            <span class="text-[28px]">SAVE</span>
+            <span class="text-[20px] font-['MySoul']">the</span>
+            <span class="text-[28px]">DATE</span>
         </div>
-        <div class="w-[1px] h-[50px]"></div>
+        <div class="flex items-center justify-center py-2">
+            <div class="w-[0.5px] h-[85px] bg-[#256c3a]"></div>
+        </div>
         <div class="flex flex-col items-center justify-center">
             <span class="text-[14px]">Trân trọng kính mời Quý Khách</span>
             <span class="text-[14px]">Đến dự lễ thành hôn của chúng tôi tại</span>
@@ -41,32 +51,42 @@
         </div>
         <div class="w-1 h-[25px]"></div>
         <div class="flex flex-col items-center justify-center">
-            <span class="text-[28px]">Thứ Bảy | 17:00 | 02.08.2025</span>
+            <span class="text-[22px]">Thứ Bảy | 17:00 | 02.08.2025</span>
             <span class="text-[14px]">(Nhằm Ngày 09 Tháng 06 Năm Ất Tỵ)</span>
         </div>
-        <div class="w-1 h-[45px]"></div>
+        <div class="flex items-center justify-center py-2">
+            <div class="w-[0.5px] h-[85px] bg-[#256c3a]"></div>
+        </div>
         <div class="flex items-center justify-center">
-            <span class="text-[20px]">Welcome !</span>
+            <span class="text-[36px] font-['Allura']">Welcome !</span>
         </div>
     </section>
 
     <!-- Dress Code -->
     <section class="flex flex-col items-center justify-center dress-code">
-        <span class="text-[20px] mb-4">DRESS CODE</span>
-        <span class="text-[14px]">Để thêm phần sang trọng và đồng điệu, </span>
-        <span class="text-[14px] mb-5">mình mong mọi người sẽ cùng diện trang phục theo Dress Code sau:</span>
-        <div class="color-palette bg-[rgba(0,0,0,0.05)] p-3 rounded-lg">
-            <span class="color color-1"></span>
-            <span class="color color-2"></span>
-            <span class="color color-3"></span>
-            <span class="color color-4"></span>
-            <span class="color color-5"></span>
+        <div class="flex flex-col items-center justify-center gap-2 p-[20px] sub-dress-code">
+            <span class="text-[28px] mb-4">DRESS CODE</span>
+            <span class="text-[14px] leading-[8px]">Để thêm phần sang trọng và đồng điệu, </span>
+            <span class="text-[14px] text-center mb-5">mình mong mọi người sẽ cùng diện trang phục theo Dress Code sau:</span>
+            <div class="color-palette p-3 rounded-lg">
+                <span class="color color-1"></span>
+                <span class="color color-2"></span>
+                <span class="color color-3"></span>
+                <span class="color color-4"></span>
+                <span class="color color-5"></span>
+            </div>
         </div>
     </section>
 
+    <div class="w-full h-[50vh] md:h-[60vh] flex items-start justify-center bg-wedding-calendar-image">
+        <div class="flex pt-[30px] flex-col items-center justify-center">
+            <span class="text-[28px] leading-[20px]">WEDDING</span>
+            <span class="text-[28px]">CALENDAR</span>
+        </div>
+    </div>
+
     <!-- Calendar -->
     <section class="program flex flex-col items-center justify-center gap-2">
-        <span class="text-[22px]">WEDDING CALENDAR</span>
         <!-- Generate a calendar and circel the day 2nd -->
         <div class="w-[300px] h-[300px]">
             <app-calendar></app-calendar>

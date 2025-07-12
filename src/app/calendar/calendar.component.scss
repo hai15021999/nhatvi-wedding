@@ -1,9 +1,8 @@
 .calendar-wrapper {
-  font-family: 'Great Vibes', cursive, 'Segoe UI', sans-serif;
   text-align: center;
   max-width: 400px;
   margin: auto;
-  color: #333;
+  color: #256c3a;
 }
 
 .title {
@@ -17,8 +16,6 @@
 }
 
 .month {
-  font-size: 1.4em;
-  font-weight: bold;
   margin: 10px 0;
 }
 
@@ -47,7 +44,7 @@
 .heart::before {
   content: '❤';
   font-size: 36px;
-  color: #b40000;
+  color: #256c3a;
   position: absolute;
   top: -12px;
   left: 50%;

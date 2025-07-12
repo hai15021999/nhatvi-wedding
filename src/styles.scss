@@ -2,8 +2,43 @@
 @import "tailwindcss";
 
 @font-face {
-	font-family: 'Madelican';
-	src: url('./assets/fonts/Madelican-2OO63.otf') format('opentype');
+	font-family: 'MySoul';
+	src: url('./assets/fonts/My_Soul/MySoul-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AlexBrush';
+	src: url('./assets/fonts/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Allison';
+	src: url('./assets/fonts/Allison/Allison-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Allura';
+	src: url('./assets/fonts/Allura/Allura-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DancingScript';
+	src: url('./assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MsMadi';
+	src: url('./assets/fonts/Ms_Madi/MsMadi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PinyonScript';
+	src: url('./assets/fonts/Pinyon_Script/PinyonScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LibertinusMono';
+	src: url('./assets/fonts/Libertinus_Mono/LibertinusMono-Regular.ttf') format('truetype');
 }
 
 body {
