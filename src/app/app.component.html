@@ -18,11 +18,9 @@
 
     </section>
 
-    <div class="w-full h-[50vh] md:h-[60vh] flex items-center justify-evenly bg-banner-image ">
-        <img src="/assets/images/image-wedding-left.jpg" class="w-[45%] md:w-[36%]" alt="" />
-        <img src="/assets/images/image-wedding-right.jpg" class="w-[45%] md:w-[36%]" alt="" />
-        <!-- <div class="bg-img-wedding-left"></div> -->
-        <!-- <div class="bg-img-wedding-right"></div> -->
+    <div class="w-full h-[50vh] md:h-[60vh] flex items-center justify-evenly bg-banner-image" id="wedding-images">
+        <img src="/assets/images/image-wedding-left.jpg" class="w-[45%] md:w-[36%] child-image left animate" [class.animate]="animated" alt="" />
+        <img src="/assets/images/image-wedding-right.jpg" class=" w-[45%] md:w-[36%] child-image right animate" alt="" [class.animate]="animated"/>
     </div>
 
     <!-- Invitation -->
@@ -86,12 +84,17 @@
     </div>
 
     <!-- Calendar -->
-    <section class="program flex flex-col items-center justify-center gap-2">
+    <section class="calendar flex flex-col items-center justify-center gap-2">
         <!-- Generate a calendar and circel the day 2nd -->
-        <div class="w-[300px] h-[300px]">
-            <app-calendar></app-calendar>
-        </div>
+        <app-calendar class="w-full"></app-calendar>
     </section>
+
+    <div class="w-full h-[50vh] md:h-[60vh] flex items-start justify-center bg-wedding-time-line-image">
+        <div class="flex pt-[30px] flex-col items-center justify-center">
+            <!-- <span class="text-[28px] leading-[20px]">WEDDING</span>
+            <span class="text-[28px]">CALENDAR</span> -->
+        </div>
+    </div>
 
     <section class="program flex flex-col items-center justify-center gap-2">
         <span class="text-[22px] font-['Madelican']">best day ever</span>

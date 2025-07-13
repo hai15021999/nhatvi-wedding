@@ -32,21 +32,34 @@
   background-image: url('../assets/images/background-banner.JPG');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  position: relative;
 
-  .bg-img-wedding-left {
-    width: 30%;
-    height: 80%;
-    background-image: url('../assets/images/image-wedding-left.jpg');
-    background-size: cover;
-    border-radius: 4px;
-  }
+  .child-image {
+    position: absolute;
+    top: 50%;
+    border-radius: 0px;
+    object-fit: cover;
+    transform: translateY(-50%);
+    transition: transform 3s ease;
 
-  .bg-img-wedding-right {
-    width: 30%;
-    height: 80%;
-    background-image: url('../assets/images/image-wedding-right.jpg');
-    background-size: cover;
-    border-radius: 4px;
+    &.left {
+      left: 0;
+      transform: translate(-70%, -50%);
+
+      &.animate {
+        transform: translate(10px, -50%);
+      }
+    }
+
+    &.right {
+      right: 0;
+      transform: translate(70%, -50%);
+
+      &.animate {
+        transform: translate(-10px, -50%);
+      }
+    }
   }
 }
 
@@ -57,7 +70,12 @@
   background-position: center;
 }
 
-
+.bg-wedding-time-line-image {
+  background-image: url('../assets/images/image-time-line.jpeg');
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+}
 
 .invitation, .program {
   // margin: 40px 0;
@@ -66,6 +84,13 @@
   background-image: url('../assets/background/bg-green-2.jpg');
   background-size: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.calendar {
+  background-image: url('../assets/background/bg-dark-green.jpg');
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #daf4db;
 }
 
 .dress-code {

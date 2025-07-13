@@ -1,18 +1,32 @@
-
-
-<div class="calendar-wrapper">
+<div class="calendar-wrapper flex flex-row items-center justify-evenly p-[8px] w-full h-[40vh] overflow-hidden">
   <!-- <div class="hearts">♥ ♥ ♥</div> -->
 
-  <h2 class="month text-[28px]">THÁNG 08 . 2025</h2>
-
-  <div class="calendar-grid">
-    <div
-      *ngFor="let day of days"
-      class="day"
-      [class.heart]="day === highlightDay"
-      [ngClass]="{ '!text-[#fafafa]': day === highlightDay }"
-    >
-      <span>{{ day }}</span>
-    </div>
+  <div class="flex flex-col items-center justify-center w-50% min-w-[30%] h-full">
+    <span class="text-[12px] flex justify-start w-full italic">Lịch</span>
+    <span class="text-[24px] md:text-[42px]">THÁNG 8</span>
+    <span class="text-[12px] flex justify-end w-full italic">2025</span>
   </div>
+
+  <div class="flex flex-col items-center pb-[12px] justify-center w-[180px] min-w-[180px] max-w-[240px] bg-[#f5e9e9] rounded-lg">
+    <div class="w-full h-[30px] flex items-center justify-between border-b-[1px] border-[#256c3a] border-dashed">
+      <div class="ml-[18px] w-[8px] h-[8px] rounded bg-[#fafafa]" ></div>
+      <div class="mr-[18px] w-[8px] h-[8px] rounded bg-[#fafafa]" ></div>
+    </div>
+    <div class="calendar-grid">
+        @for (item of dateInWeek; track item) {
+        <div class="text-[10px] p-[2px] w-[20px] h-[20px] min-w-[20px] font-bold text-[#256c3a]">
+          <span>{{ item }}</span>
+        </div>
+        }
+
+        @for (day of daysInMonth; track day) {
+        <div class="text-[10px] p-[2px] w-[20px] h-[20px] min-w-[20px] text-[#256c3a]"
+          [ngClass]="{ 'border-[1px] border-solid border-[#f74f4f] rounded-full font-bold': day === highlightDay }">
+          <span>{{ day }}</span>
+        </div>
+        }
+      </div>
+
+  </div>
+
 </div>
