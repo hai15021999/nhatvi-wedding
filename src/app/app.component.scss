@@ -3,7 +3,7 @@
   line-height: 1.6;
   max-width: 768px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px;
   background: #faf9f6;
 }
 
@@ -77,6 +77,27 @@
   background-position: center;
 }
 
+.bg-conclusion-image {
+  background-image: url('../assets/images/conclution-container.jpeg');
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+
+  .bg-conclusion-inside {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/conclusion-inside.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
 .invitation, .program {
   // margin: 40px 0;
   padding: 20px;
@@ -84,6 +105,12 @@
   background-image: url('../assets/background/bg-green-2.jpg');
   background-size: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wedding-footer {
+  background: white;
+  background-image: url('../assets/background/bg-green-2.jpg');
+  background-size: cover;
 }
 
 .calendar {
