@@ -15,6 +15,35 @@ export class AppComponent {
 
   animated = false;
 
+  private audio = new Audio('assets/audios/le-duong.mp3');
+  private boundStartMusic = this.startMusic.bind(this);
+
+  ngOnInit(): void {
+    this.audio.loop = true;
+    this.audio.volume = 0.5;
+
+    // Wait for user to click anywhere on the page
+    document.addEventListener('click', this.boundStartMusic);
+    // timer(100).subscribe(() => {
+    //   document.getElementById('temp')?.click();
+    // });
+  }
+
+  ngOnDestroy(): void {
+    document.removeEventListener('click', this.boundStartMusic);
+  }
+
+  private startMusic(): void {
+    this.audio.play().then(() => {
+      console.log('Music started 🎶');
+    }).catch(err => {
+      console.error('Failed to start music:', err);
+    });
+
+    // Remove listener after first interaction
+    document.removeEventListener('click', this.boundStartMusic);
+  }
+
   toggleAnimation() {
     this.animated = !this.animated;
   }
